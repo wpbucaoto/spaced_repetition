@@ -1,4 +1,28 @@
-# A Program inspired by the topic Spaced Repetition
+"""
+Spaced Repetition Python Script
+
+Author: Wilson Bucaoto
+
+Description:
+This script implements a Spaced Repetition System (SRS) using SQLite, allowing users to log topics
+and schedule review dates based on intervals for effective learning retention.
+
+Functions:
+- log_topic(topic): Add a new topic with calculated review dates.
+- monthly_review(): List topics due for review this month.
+- weekly_review(): Display topics due for review this week.
+- delete_all_topics(): Remove all logged topics.
+
+Database Structure:
+- Table 'topics': id (INTEGER), topic (TEXT), initial_date (TEXT), review_dates (TEXT)
+
+Usage:
+Run the script and follow prompts to log topics, review scheduled topics, delete entries, or exit.
+
+Note:
+Requires 'sqlite3' and 'json' modules.
+"""
+
 
 import sqlite3
 import json
