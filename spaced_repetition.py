@@ -1,3 +1,5 @@
+# A Program inspired by the topic Spaced Repetition
+
 import sqlite3
 import json
 from datetime import datetime, timedelta
